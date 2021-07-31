@@ -38,6 +38,7 @@ spec:
           command:
             - /app/argocd-notifications-backend
             - controller
+            - --logFormat={{ .Values.logFormat }}
             - --loglevel={{ .Values.logLevel }}
             {{- if .Values.metrics.enabled }}
             - --metrics-port={{ .Values.metrics.port }}

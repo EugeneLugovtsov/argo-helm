@@ -45,6 +45,9 @@ secret:
     # email-password:
       # For more information: https://argocd-notifications.readthedocs.io/en/stable/services/email/
 
+## argocd-notification log format: text|json
+logFormat: text
+## argocd-notification log level
 logLevel: info
 
 extraArgs: []
